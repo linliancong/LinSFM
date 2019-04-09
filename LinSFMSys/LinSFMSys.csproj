@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CAECC06-9A4C-43EF-A736-D7462E7EB119}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LinSFMSys</RootNamespace>
+    <AssemblyName>LinSFMSys</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORM\CWGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\CWGL.Designer.cs">
+      <DependentUpon>CWGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbFunc.cs" />
+    <Compile Include="FORM\DDCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\DDCX.Designer.cs">
+      <DependentUpon>DDCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\XSGL_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\XSGL_Operator.Designer.cs">
+      <DependentUpon>XSGL_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\KHDD_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\KHDD_Operator.Designer.cs">
+      <DependentUpon>KHDD_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\JCBJ_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\JCBJ_Operator.Designer.cs">
+      <DependentUpon>JCBJ_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\YGXX_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\YGXX_Operator.Designer.cs">
+      <DependentUpon>YGXX_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\USER_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\USER_Operator.Designer.cs">
+      <DependentUpon>USER_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\XTSZ_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\XTSZ_Operator.Designer.cs">
+      <DependentUpon>XTSZ_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gloab.cs" />
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\JCBJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\JCBJ.Designer.cs">
+      <DependentUpon>JCBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\KHDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\KHDD.Designer.cs">
+      <DependentUpon>KHDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NForm.Designer.cs">
+      <DependentUpon>NForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FORM\WGYS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\WGYS.Designer.cs">
+      <DependentUpon>WGYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\WLPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\WLPS.Designer.cs">
+      <DependentUpon>WLPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\XDGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\XDGL.Designer.cs">
+      <DependentUpon>XDGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\XSGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\XSGL.Designer.cs">
+      <DependentUpon>XSGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\XTSZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\XTSZ.Designer.cs">
+      <DependentUpon>XTSZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\YGXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\YGXX.Designer.cs">
+      <DependentUpon>YGXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\YKGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\YKGZ.Designer.cs">
+      <DependentUpon>YKGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs" />
+    <Compile Include="UpFile.cs" />
+    <EmbeddedResource Include="FORM\DDCX.resx">
+      <DependentUpon>DDCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\JCBJ.resx">
+      <DependentUpon>JCBJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\KHDD.resx">
+      <DependentUpon>KHDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\WLPS.resx">
+      <DependentUpon>WLPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\XDGL.resx">
+      <DependentUpon>XDGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\XSGL_Operator.resx">
+      <DependentUpon>XSGL_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\KHDD_Operator.resx">
+      <DependentUpon>KHDD_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\JCBJ_Operator.resx">
+      <DependentUpon>JCBJ_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\XTSZ.resx">
+      <DependentUpon>XTSZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\YGXX.resx">
+      <DependentUpon>YGXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\YGXX_Operator.resx">
+      <DependentUpon>YGXX_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\USER_Operator.resx">
+      <DependentUpon>USER_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\XTSZ_Operator.resx">
+      <DependentUpon>XTSZ_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FORM\XSGL.resx">
+      <DependentUpon>XSGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
